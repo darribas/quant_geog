@@ -249,3 +249,5 @@ Of course any mistakes and errors remain entirely of myself
 Content by [Dani Arribas-Bel](http://darribas.org),
 licensed under [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 
+Materials available at [https://github.com/darribas/quant_geog](https://github.com/darribas/quant_geog)
+
