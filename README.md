@@ -16,6 +16,33 @@ An online version of the slides is available at:
 
 [http://darribas.org/quant_geog](http://darribas.org/quant_geog)
 
+## Citation
+
+[![DOI](https://zenodo.org/badge/5128/darribas/quant_geog.png)](http://dx.doi.org/10.5281/zenodo.11976)
+
+If you use this material, please cite it using the following reference:
+
+```
+@manual{doi.10.5281/zenodo.11976,
+    author = "Arribas-Bel, Daniel",
+    title = "{A 1h. lecture on Quantitative Geography for second-year
+    Geography students}",
+    year = "2014",
+    doi = "10.5281/zenodo.11976",
+    url = "{ http://darribas.org/quant_geog}",
+}
+```
+
+## Contributions
+
+If you find these slides useful and change them in any way, please consider
+contributing back by issuing a pull request through the usual Github system.
+
+An updated list of contributors is:
+
+* [Dani Arribas-Bel](http://darribas.org)
+  ([@darribas](http://twitter.com/darribas))
+
 ## License
 
 `quant_geog` is released under [Creative Commons BY
