@@ -4,7 +4,7 @@ This repository contains slides for a 1h. lecture to second year Geography stude
 
 Use the following to get the slides.
 ```Make
-make clean
+make all && make clean
 ```
 
 The contents heavily rely on the following publications:

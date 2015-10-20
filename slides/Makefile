@@ -15,7 +15,7 @@ $(slides_tex): %.tex: $(notedir)/%.md preamble-slides.tex
 
 $(slides_pdf): %.pdf: %.tex
 	latexmk -xelatex $(basename $<)
-
+	
 # if you don't have Keynote or don't want to generate the Keynote file
 # but want to avoid errors when you use "make all" (the default),
 # just set the slides_key variable to nothing by uncommenting this line:
