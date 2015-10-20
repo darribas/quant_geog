@@ -1,49 +1,39 @@
-# `quant_geog`
+# Markdown to lecture slides
 
-This repository contains slides for a 1h. lecture to second year Geography students introducing the field of quantitative geography. 
+(with some beamer bells and whistles, by a Keynote refugee)
 
-The contents heavily rely on the following publications:
+Create notes in the `notes/` directory, on the model of [classnotes.md](notes/classnotes.md). Then generate a PDF of slides with
 
-* Haggett, P. 2008. "[The Local Shape of Revolution: Reflections on Quantitative Geography at Cambridge in the 1950s and 1960s](http://onlinelibrary.wiley.com/doi/10.1111/j.1538-4632.2008.00731.x/abstract)," *Geographical Analysis*, 40, 336–352.
-* Murray, A. T. 2010. "[Quantitative Geography](http://onlinelibrary.wiley.com/doi/10.1111/j.1467-9787.2009.00642.x/abstract)," *Journal of Regional Science*,
-  50, 1, 143-163.
-
-The network map of [communities in
-London](http://urbanmovements.co.uk/2012/11/26/identifying-communities-in-traffic-flow/) was produced by Ed Manley, who
-kindly authorized its reproduction here.
-
-An online version of the slides is available at:
-
-[http://darribas.org/quant_geog](http://darribas.org/quant_geog)
-
-## Citation
-
-[![DOI](https://zenodo.org/badge/5128/darribas/quant_geog.png)](http://dx.doi.org/10.5281/zenodo.11976)
-
-If you use this material, please cite it using the following reference:
-
-```
-@manual{doi.10.5281/zenodo.11976,
-    author = "Arribas-Bel, Daniel",
-    title = "{A 1h. lecture on Quantitative Geography for second-year
-    Geography students}",
-    year = "2014",
-    doi = "10.5281/zenodo.11976",
-    url = "{ http://darribas.org/quant_geog}",
-}
+```Make
+make -C slides classnotes.pdf
 ```
 
-## Contributions
+[slides/classnotes.pdf](slides/classnotes.pdf) is the result on my system.
+(Of course you can also `cd slides; make classnotes.pdf`, but I feel more like a command-line master if I use `make -C` from the top-level directory.)
 
-If you find these slides useful and change them in any way, please consider
-contributing back by issuing a pull request through the usual Github system.
+If you have Keynote and want to use it as a presentation PDF viewer, install [PDF to Keynote](http://www.cs.hmc.edu/~oneill/freesoftware/pdftokeynote.html) and then do
 
-An updated list of contributors is:
+```Make
+make -C slides classnotes.key
+```
 
-* [Dani Arribas-Bel](http://darribas.org)
-  ([@darribas](http://twitter.com/darribas))
+To generate notes (note pages interleaved with slide pages):
 
-## License
+```Make
+make -C notes classnotes.pdf
+```
 
-`quant_geog` is released under [Creative Commons BY
-4.0](http://creativecommons.org/licenses/by/4.0/) license.
+[notes/classnotes.pdf](notes/classnotes.pdf) is the result on my system.
+
+I like to print these 4-up in landscape. To generate this format:
+
+```Make
+make -C notes classnotes-4up.pdf
+```
+
+To make all slide and note PDFs at once, use `make` all by itself from the top-level directory. (One feels even more of a command-line master when one uses `$(MAKE)` in a Makefile).
+
+(To get all the keynote files, try `make all_key`, but no promises: my little AppleScript for running PDF To Keynote may not work quite right in that case.)
+
+I discuss how the bits and pieces work together, and the rationale for doing this, in a blog post: ["Easy Lecture Slides Made Difficult with Pandoc and Beamer."](http://andrewgoldstone.com/blog/2014/12/24/slides/)
+

@@ -1,7 +1,7 @@
 ---
 title: "Quantitative Geography"
 subtitle: "GGM 201: Research Methods for Dissertations"
-author: "[[Dr. Dani Arribas-Bel]](http://darribas.org)"
+author: "[Christoph Stich](http://www.stich.xyz/)"
 output:
   beamer_presentation:
     toc: true
@@ -9,9 +9,6 @@ output:
   revealjs::revealjs_presentation:
     mathjax: default
     center: true
-    pandoc_args:
-    - --css
-    - fig/journal.css
     transition: linear
 ---
 
@@ -46,34 +43,45 @@ output:
 # History
 
 ## History
-
-* As practice, origin is very old and hard to date
+* As a practice, origin is very old and hard to pinpoint 
 * As a *movement*, 1950s/60s/70s $\rightarrow$ **Quantitative Revolution**
-    * Adoption of the **scientific method** in human geography
     * Focus on **quantification** and measurement
-    * Strong association with particular **methods**: statistics, modeling...
+    * Adoption of the **scientific method** 
+    * Strong association with particular **methods**: statistics, modeling, mapping, mathematics, and hypothesis testing 
     * Sprung out of a few epicenters (UW's "*space cadets*", Lund's T. Hagerstrand, also related to Isard's Regional Science)
-* 1980s/90s $\rightarrow$ Cultural turn in Human Geography
-* 1990s/00s $\rightarrow$ Spill over other disciplines (Economics, sociology,
-  public health/policy...)
-* **[My view]** Nowadays $\rightarrow$ Back in fashion? Big Data revolution, IoT,
-  computational power...
+    * One of the dominant strains in Physcial Geography after the 1950s - Pidwirny (2006)
+
+## History
+* 1980s/90s $\rightarrow$ Cultural turn in Human Geography and other social sciences
+* 1990s/00s $\rightarrow$ Cross-polination with and from other disciplines (economy, sociology, urban planning, 
+  public policy, ...)
+
+## History
+* **[My view]** Nowadays $\rightarrow$ Back in fashion? Big Data revolution, Internet of Things,
+  Computational Social Sciences, ... 
+* Intricate relationship with the available tools at the time
+    * Mainframes, satellites, machine learning, ...
+
 
 # Quantitative Geography today
 
 ## Murray (2010)
 
 (Spatial) methods that can be/have been applied to *human* and *physical* geography
-problems and issues. Broad categories:
+problems and issues. 
 
-* Geographic Information Systems (GISs)
+* Geographic Information Systems (GIS)
 * Airborne sensing
 * Statistics and exploratory spatial data analysis (ESDA)
 * Mathematics and optimization
 * Regional analysis
 * Computer science and simulation
 
-## Geographic Information Systems (GISs)
+. . .
+
+Let's walk through each of those with an example...
+
+## Geographic Information Systems (GIS)
 
 "Collection of hardware, software, and associated procedures to support **spatial data**...
 
@@ -83,7 +91,6 @@ problems and issues. Broad categories:
 * analysis, 
 * and display"
 
-Let's walk through each of them with an example...
 
 ## GIS example: cycling tracking
 
@@ -112,42 +119,44 @@ and/or creation"
 * Photogrammetry
 * Remote sensing
 
-Share:
-
-* (Not only) from geographers: engineering, geodetic and computer sciences
-* Focus on **data collection**
-* Importance of sensors (IoT)
-* Need for techniques to derive spatial information from raw
-  measurements
-
 ## Airborne sensing
 
-### Global Positioning System
+Commonalities:
+
+* Not only geography but engineering, geodesy, and computer science
+* Focus on **data collection**
+* Importance of sensors
+* Need for techniques to derive spatial information from raw
+  measurements
+    * Data doesn't just "talk" on its own
+
+
+## Global Positioning System
 
 Systems (satellites, base stations and individual receivers) that enable
-determining **position** and **time**
+(relative) accurate and fast measurments of **position** and **time**
 
-### Photogrammetry
+## Photogrammetry
 
-* Capture, analysis and interpretation of aerial photographs that represent spatial information
-* Camera on balloons, planes, helicopters, drones...
+* Capture, analysis, and interpretation of aerial photographs that represent spatial information
+* Camera on balloons, planes, helicopters, drones, ...
 
-### Remote sensing
+## Remote sensing
 
-* Hardware, software and techniques for semiautomated spatial data collection
-* Detect electromagnetic radiation using microwave sensors
+* Hardware, software and techniques for semi-automated spatial data collection
+* Using aerial sensors to detect a propogated signal (e.g. electromagnetic radiation) 
 * Allows for collection of land cover, land uses, vegetation type...
 
 ## Airborne sensing (source: WikiPedia)
 
 <CENTER>
-![http://en.wikipedia.org/wiki/Dilution_of_precision_%28GPS%29#mediaviewer/File:Good_gdop.png](fig/gps.png)
+![http://en.wikipedia.org/wiki/Dilution_of_precision_\%28GPS%29#mediaviewer/File:Good_gdop.png](fig/gps.png)
 </CENTER>
 
 ## Airborne sensing (source: WikiMedia)
 
 <CENTER>
-![http://commons.wikimedia.org/wiki/File:Drone_with_GoPro_digital_camera_mounted_underneath_-_22_April_2013.jpg](fig/drone.jpeg)
+![http://commons.wikimedia.org/wiki/File:Drone_with_GoPro_digital_camera_mounted_underneath_\-_22_April_2013.jpg](fig/drone.jpeg)
 </CENTER>
 
 ## Airborne sensing (source: WikiPedia)
@@ -164,7 +173,7 @@ Algebra, geometry, calculus are at the core of much of Quantitative Geography.
 
 * Spatial interaction models (trade, commuting, etc.)
 * Spatial optimization (real world examples?)
-* Network analysis (spatial networks: rivers, streets, the internet...)
+* Network analysis (spatial networks: rivers, streets, the internet, ...)
 
 ## Mathematics and optimization (source: Ed Manley)
 
@@ -178,7 +187,7 @@ Algebra, geometry, calculus are at the core of much of Quantitative Geography.
 
 * One of the most extensive areas of Quantitative Geography
 * Builds on non-spatial statistics, but incorporates **space** explicitly in
-  that framework
+  its framework
 * Main areas:
     * Surveying and sampling
     * Point pattern analysis
@@ -199,18 +208,17 @@ Algebra, geometry, calculus are at the core of much of Quantitative Geography.
   quantitative manner
 * Obtain insights about: 
     * Industry interactions
-    * Impacts on sectors of the economy and their channels
+    * Impacts on sectors of the economy
     * Regional interdependencies 
-* Intimately connected to economic geography, **Regional Science** and economics
+* Intimately connected to economic geography, **regional science** and economics
 
 ## Computer science and simulation*
 
 * Traditionally *"the playground of non-geographers"*
 * Recently, a much more balanced two-way relationship
-* Using computating technology to create **spatial** knowledge
+* Using computation to create **spatial** knowledge
 * Huge potential in taking advantage of future computing advances, distributed networks and parallel processing (hardware and software advances)
-* Increasing in relevance as datasets grow and problems becomes more
-  computational
+* Increasing in relevance as datasets grow and your "average" problem becomes more computationally intensive
 
 # Where to continue
 
@@ -222,32 +230,38 @@ If you like how all of this sounds, find more of it at [GEES](http://www.birming
 * [Y2] *Geomatics for Geographers *, by Dr. [Chapman](http://www.birmingham.ac.uk/staff/profiles/gees/chapman-lee.aspx)
 * [Y2] *The Urban and Regional Economy *, by Dr. [Tranos](http://www.birmingham.ac.uk/staff/profiles/gees/tranos-emmanouil.aspx).
 * [Y3] *Network Geographies*, by Dr. [Tranos](http://www.birmingham.ac.uk/staff/profiles/gees/tranos-emmanouil.aspx).
-* [Y3] *Geocomputation* (coming soon!), by Dr.
-  [Arribas-Bel](http://darribas.org).
 
 Or talk to:
 
 * Dr. [Tranos](http://www.birmingham.ac.uk/staff/profiles/gees/tranos-emmanouil.aspx)
-* Dr. [Arribas-Bel](http://darribas.org)
+* PhD candidate [Stich](http://www.stich.xyz)
+
+# Discussion and questions 
+
+## Questions and discussion
+
+* Questions
+* Discussion
 
 # Credits
 
-##
+## Credits
 
-### Credits
+This set of slides is based on
 
-This set of slides are heavily inspired by:
+* Arribas-Bel, D. 2014. "[A 1h. lecture on Quantitative Geography for second-year Geography students](http://darribas.org/quant_geog)"
+
+## References 
 
 * Haggett, P. 2008. "[The Local Shape of Revolution: Reflections on Quantitative Geography at Cambridge in the 1950s and 1960s](http://onlinelibrary.wiley.com/doi/10.1111/j.1538-4632.2008.00731.x/abstract)," *Geographical Analysis*, 40, 336–352.
 * Murray, A. T. 2010. "[Quantitative Geography](http://onlinelibrary.wiley.com/doi/10.1111/j.1467-9787.2009.00642.x/abstract)," *Journal of Regional Science*,
   50, 1, 143-163.
+* Add the missing reference!
 
-Of course any mistakes and errors remain entirely of myself
+## License
 
-### License
-
-Content by [Dani Arribas-Bel](http://darribas.org),
+Content mainly done by [Dani Arribas-Bel](http://darribas.org),
+Update by [Christoph Stich](http://www.stich.xyz),
 licensed under [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 
-Materials available at [https://github.com/darribas/quant_geog](https://github.com/darribas/quant_geog)
-
+Materials available at [https://github.com/cstich/quant_geog](https://github.com/cstich/quant_geog)
