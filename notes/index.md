@@ -212,6 +212,12 @@ Algebra, geometry, calculus are at the core of much of Quantitative Geography.
 ![http://urbanmovements.co.uk/files/2012/11/NodeModularity_GrLondon_3_1k_newcred.png](fig/network.png)
 </CENTER>
 
+\note{Source Manleys website: One recent bit of research I have been working on has been looking at the application of community detection algorithms to traffic flow in London.
+The idea is that within the traffic system exist a number of sub-systems of highly interconnected roads. Community detection algorithms were developed to identify clusters within a network dataset.  These methods are most often applied to examples within the social network sphere, in the identification of cliques, where a cluster demonstrates high inter-connectivity, with lower connectivity with the rest of the network.  My thinking behind this bit of work was that we might be able to identify similar characteristics in traffic flow, where we can observed high coupling between clusters of nodes.
+The map below visualises the modules (distinguished by colour) identified through the application of community detection methods to a topological representation of the road network.  Node connectivity is established using a dataset of 1.5 million private hire cab routes through London.
+The resulting visualisation, apart from being quite pretty (thank Gephi for that), reveal some interesting trends.  To a certain extent, a number of expected patterns in traffic flow are prevalent, with some of the ‘corridors’ into central London, such as the M3, M4 and A2, clearly defined as distinct clusters.  Yet the image also shows how both the M25, the ring road around London, and the North Circular, usually considered as single entities, can be segmentalised into modules defined by their usage.
+We also see further interesting patterns in central London too, where certain regions – specifically Knightsbridge, Soho, Shoreditch the City and Hyde Park – are clearly defined as distinct modules.  These would appear to be areas of high internal movement, and thus a clear product of cab usage patterns}
+
 ## Statistics and ESDA*
 
 **ESDA**: **E**xploratory **S**patial **D**ata **A**nalysis
