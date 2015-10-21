@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta name="author" content="Christoph Stich">
+  <title>Quantitative Geography</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<header>
+<h1 class="title">Quantitative Geography</h1>
+<h1 class="subtitle">GGM 201: Research Methods for Dissertations</h1>
+<h2 class="author"><a href="http://www.stich.xyz/">Christoph Stich</a></h2>
+</header>
+<h1 id="definition"><span class="header-section-number">1</span> Definition</h1>
+<h2 id="dictionary"><span class="header-section-number">1.1</span> Dictionary</h2>
+<p><strong>Source</strong>: <a href="http://www.oed.com">Oxford English Dictionary</a></p>
+<h3 id="quantitative"><span class="header-section-number">1.1.1</span> Quantitative</h3>
+<ul>
+<li>&quot;That is, or may be, <strong>measured</strong> or assessed with respect to or on the basis of <strong>quantity</strong>; that may be expressed in terms of quantity; quantifiable.&quot;</li>
+</ul>
+<h3 id="geography"><span class="header-section-number">1.1.2</span> Geography</h3>
+<ul>
+<li>&quot;The field of study concerned with the <strong>physical features of the earth</strong> and its atmosphere, and with <strong>human activity</strong> as it affects and is affected by these, including the <strong>distribution</strong> of populations and resources and political and economic activities; also as a subject of educational study or examination.&quot;</li>
+</ul>
+<h2 id="academic"><span class="header-section-number">1.2</span> Academic</h2>
+<h3 id="fotheringham-brunsdon-and-charlton-2000"><span class="header-section-number">1.2.1</span> Fotheringham, Brunsdon, and Charlton (2000)</h3>
+<p>&quot;One or more of the following activities:</p>
+<ul>
+<li>the analysis of numerical spatial data;</li>
+<li>the development of spatial theory;</li>
+<li>and the construction and testing of mathematical models of spatial processes&quot;</li>
+</ul>
+<h3 id="murray-2010"><span class="header-section-number">1.2.2</span> Murray (2010)</h3>
+<p>&quot;The collection of <strong>methods</strong> that are applied, or could/can be applied, by geographers and others to study <strong>spatial</strong> phenomena, issues and problems&quot;</p>
+<h1 id="history"><span class="header-section-number">2</span> History</h1>
+<h2 id="history-1"><span class="header-section-number">2.1</span> History</h2>
+<ul>
+<li>As a practice, origin is very old and hard to pinpoint</li>
+<li>As a <em>movement</em>, 1950s/60s/70s <span class="math">\(\rightarrow\)</span> <strong>Quantitative Revolution</strong>
+<ul>
+<li>Focus on <strong>quantification</strong> and measurement</li>
+<li>Adoption of the <strong>scientific method</strong></li>
+<li>Strong association with particular <strong>methods</strong>: statistics, modeling, mapping, mathematics, and hypothesis testing</li>
+<li>Sprung out of a few epicenters (UW's &quot;<em>space cadets</em>&quot;, Lund's T. Hagerstrand, also related to Isard's Regional Science)</li>
+<li>One of the dominant strains in Physcial Geography after the 1950s - Pidwirny (2006)</li>
+</ul></li>
+</ul>
+<h2 id="history-2"><span class="header-section-number">2.2</span> History</h2>
+<ul>
+<li>1980s/90s <span class="math">\(\rightarrow\)</span> Cultural turn in Human Geography and other social sciences</li>
+<li>1990s/00s <span class="math">\(\rightarrow\)</span> Cross-polination with and from other disciplines (economy, sociology, urban planning, public policy, ...)</li>
+</ul>
+<h2 id="history-3"><span class="header-section-number">2.3</span> History</h2>
+<ul>
+<li><strong>[My view]</strong> Nowadays <span class="math">\(\rightarrow\)</span> Back in fashion? Big Data revolution, Internet of Things, Computational Social Sciences, ...</li>
+<li>Intricate relationship with the available tools at the time
+<ul>
+<li>Mainframes, satellites, machine learning, ...</li>
+</ul></li>
+</ul>
+<h1 id="quantitative-geography-today"><span class="header-section-number">3</span> Quantitative Geography today</h1>
+<h2 id="murray-2010-1"><span class="header-section-number">3.1</span> Murray (2010)</h2>
+<p>(Spatial) methods that can be/have been applied to <em>human</em> and <em>physical</em> geography problems and issues.</p>
+<ul>
+<li>Geographic Information Systems (GIS)</li>
+<li>Airborne sensing</li>
+<li>Statistics and exploratory spatial data analysis (ESDA)</li>
+<li>Mathematics and optimization</li>
+<li>Regional analysis</li>
+<li>Computer science and simulation</li>
+</ul>
+<p>. . .</p>
+<p>Let's walk through each of those with an example...</p>
+<h2 id="geographic-information-systems-gis"><span class="header-section-number">3.2</span> Geographic Information Systems (GIS)</h2>
+<p>&quot;Collection of hardware, software, and associated procedures to support <strong>spatial data</strong>...</p>
+<ul>
+<li>acquisition,</li>
+<li>management,</li>
+<li>manipulation,</li>
+<li>analysis,</li>
+<li>and display&quot;</li>
+</ul>
+<h2 id="gis-example-cycling-tracking"><span class="header-section-number">3.3</span> GIS example: cycling tracking</h2>
+<CENTER>
+<img src="fig/route.png" alt="Route" />
+</CENTER>
+
+<p>Source: http://www.runkeeper.com</p>
+<h2 id="gis-example-cycling-tracking-1"><span class="header-section-number">3.4</span> GIS example: cycling tracking</h2>
+<ul>
+<li><strong>Acquisition</strong>: collection of GPS traces (smartphone)</li>
+<li><strong>Management</strong>: phone storage, transfer over server, orderly inserted into database</li>
+<li><strong>Manipulation</strong>: transform traces (points) into an actual route (lines)</li>
+<li><strong>Analysis</strong>: calculate distance, speed, climb, etc.</li>
+<li><strong>Display</strong>: present information in an intuitive and efficient way</li>
+</ul>
+<p><em>Other day-to-day examples of GIS?</em> </p>
+<h2 id="airborne-sensing"><span class="header-section-number">3.5</span> Airborne sensing</h2>
+<p>&quot;Geospatial sensing technologies that can be utilized for data collection and/or creation&quot;</p>
+<ul>
+<li>Global position system (GPS)</li>
+<li>Photogrammetry</li>
+<li>Remote sensing</li>
+</ul>
+<p></p>
+<h2 id="airborne-sensing-1"><span class="header-section-number">3.6</span> Airborne sensing</h2>
+<p>Commonalities:</p>
+<ul>
+<li>Not only geography but engineering, geodesy, and computer science</li>
+<li>Focus on <strong>data collection</strong></li>
+<li>Importance of sensors</li>
+<li>Need for techniques to derive spatial information from raw measurements
+<ul>
+<li>Data doesn't just &quot;talk&quot; on its own</li>
+</ul></li>
+</ul>
+<h2 id="global-positioning-system"><span class="header-section-number">3.7</span> Global Positioning System</h2>
+<p>Systems (satellites, base stations and individual receivers) that enable (relative) accurate and fast measurments of <strong>position</strong> and <strong>time</strong></p>
+<p></p>
+<h2 id="gps-source-wikipedia"><span class="header-section-number">3.8</span> GPS (source: WikiPedia)</h2>
+<CENTER>
+<img src="fig/gps.jpg" alt="https://upload.wikimedia.org/wikipedia/commons/6/68/Magellan_GPS_Blazer12.jpg" />
+</CENTER>
+
+<p></p>
+<h2 id="photogrammetry"><span class="header-section-number">3.9</span> Photogrammetry</h2>
+<ul>
+<li>Capture, analysis, and interpretation of aerial photographs that represent spatial information</li>
+<li>Camera on balloons, planes, helicopters, drones, ...</li>
+</ul>
+<p> </p>
+<h2 id="photogrammetry-source-wikimedia"><span class="header-section-number">3.10</span> Photogrammetry (source: WikiMedia)</h2>
+<CENTER>
+<img src="fig/drone.jpeg" alt="http://commons.wikimedia.org/wiki/File:Drone_with_GoPro_digital_camera_mounted_underneath_-22April_2013.jpg" />
+</CENTER>
+
+<h2 id="photogrammetry-source-wikipedia"><span class="header-section-number">3.11</span> Photogrammetry (source: Wikipedia)</h2>
+<CENTER>
+<img src="fig/bay.jpg" alt="https://upload.wikimedia.org/wikipedia/commons/f/f3/Three_Arch_Bay_Photo_Taken_by_pilot_D_Ramey_Logan.jpg" />
+</CENTER>
+
+<p></p>
+<h2 id="remote-sensing"><span class="header-section-number">3.12</span> Remote sensing</h2>
+<ul>
+<li>Hardware, software and techniques for semi-automated spatial data collection</li>
+<li>Using aerial sensors to detect a propogated signal (e.g. electromagnetic radiation)</li>
+<li>Allows for collection of land cover, land uses, vegetation type, meterological data, ocean currents, desertification, ...</li>
+</ul>
+<p></p>
+<h2 id="remote-sensing-source-wikipedia"><span class="header-section-number">3.13</span> Remote sensing (source: WikiPedia)</h2>
+<CENTER>
+<img src="fig/buoy.jpg" alt="http://en.wikipedia.org/wiki/Weather_buoy#mediaviewer/File:NOAA-NDBC-discus-buoy.jpg" />
+</CENTER>
+
+<p></p>
+<h2 id="mathematics-and-optimization"><span class="header-section-number">3.14</span> Mathematics and optimization</h2>
+<p>Algebra, geometry, calculus are at the core of much of Quantitative Geography.</p>
+<h3 id="prominent-examples"><span class="header-section-number">3.14.1</span> Prominent Examples</h3>
+<ul>
+<li>Spatial interaction models (trade, commuting, etc.)</li>
+<li>Spatial optimization (real world examples?)</li>
+<li>Network analysis (spatial networks: rivers, streets, the internet, ...)</li>
+</ul>
+<p>  </p>
+<h2 id="mathematics-and-optimization-source-ed-manley"><span class="header-section-number">3.15</span> Mathematics and optimization (source: Ed Manley)</h2>
+<CENTER>
+<img src="fig/network.png" alt="http://urbanmovements.co.uk/files/2012/11/NodeModularity_GrLondon_3_1k_newcred.png" />
+</CENTER>
+
+<p></p>
+<h2 id="statistics-and-esda"><span class="header-section-number">3.16</span> Statistics and ESDA*</h2>
+<p><strong>ESDA</strong>: <strong>E</strong>xploratory <strong>S</strong>patial <strong>D</strong>ata <strong>A</strong>nalysis</p>
+<ul>
+<li>One of the most extensive areas of Quantitative Geography</li>
+<li>Builds on non-spatial statistics, but incorporates <strong>space</strong> explicitly in its framework</li>
+<li>Main areas:
+<ul>
+<li>Surveying and sampling</li>
+<li>Point pattern analysis</li>
+<li>Spatial autocorrelation</li>
+<li>Spatial statistics (regression, interpolation...)</li>
+<li>Exploratory Spatial Data Analysis (ESDA) and interactive data exploration</li>
+</ul></li>
+</ul>
+<p> </p>
+<h2 id="statistics-and-esda-source-wikipedia"><span class="header-section-number">3.17</span> Statistics and ESDA (source: WikiPedia)*</h2>
+<CENTER>
+<img src="fig/snow.jpg" alt="http://en.wikipedia.org/wiki/Spatial_analysis#mediaviewer/File:Snow-cholera-map.jpg" />
+</CENTER>
+
+<p>. . .</p>
+<p><em>Can you guess which pump was spreading the cholera bacteria?</em></p>
+<p></p>
+<h2 id="regional-analysis"><span class="header-section-number">3.18</span> Regional analysis*</h2>
+<ul>
+<li>Techniques to support the understanding of urban and regional economies in a quantitative manner</li>
+<li>Obtain insights about:
+<ul>
+<li>Industry interactions</li>
+<li>Impacts on sectors of the economy</li>
+<li>Regional interdependencies</li>
+</ul></li>
+<li>Intimately connected to economic geography, <strong>regional science</strong> and economics</li>
+</ul>
+<p></p>
+<h2 id="computer-science-and-simulation"><span class="header-section-number">3.19</span> Computer science and simulation*</h2>
+<ul>
+<li>Mainly:
+<ul>
+<li>database design</li>
+<li>algorithm design</li>
+<li>simulation processes</li>
+</ul></li>
+<li>Traditionally <em>&quot;the playground of non-geographers&quot;</em></li>
+<li>Recently, a much more reciprocal relationship</li>
+<li>Using computation to create <strong>spatial</strong> knowledge</li>
+<li>Increasing in relevance as datasets grow and your &quot;average&quot; problem becomes more computationally intensive</li>
+</ul>
+<h1 id="where-to-continue"><span class="header-section-number">4</span> Where to continue</h1>
+<h2 id="where-to-continue-1"><span class="header-section-number">4.1</span> Where to continue</h2>
+<p>If you like how all of this sounds, find more of it at <a href="http://www.birmingham.ac.uk/schools/gees/index.aspx">GEES</a> scattered in:</p>
+<ul>
+<li>[Y2] <em>Understanding neighborhood poverty</em>, by Dr. <a href="http://www.birmingham.ac.uk/staff/profiles/gees/lee-peter.aspx">Lee</a></li>
+<li>[Y2] <em>Geomatics for Geographers </em>, by Dr. <a href="http://www.birmingham.ac.uk/staff/profiles/gees/chapman-lee.aspx">Chapman</a></li>
+<li>[Y2] <em>The Urban and Regional Economy </em>, by Dr. <a href="http://www.birmingham.ac.uk/staff/profiles/gees/tranos-emmanouil.aspx">Tranos</a>.</li>
+<li>[Y3] <em>Network Geographies</em>, by Dr. <a href="http://www.birmingham.ac.uk/staff/profiles/gees/tranos-emmanouil.aspx">Tranos</a>.</li>
+</ul>
+<p>Or talk to:</p>
+<ul>
+<li>Dr. <a href="http://www.birmingham.ac.uk/staff/profiles/gees/tranos-emmanouil.aspx">Tranos</a></li>
+<li>PhD candidate <a href="http://www.stich.xyz">Stich</a></li>
+</ul>
+<h1 id="discussion-and-questions"><span class="header-section-number">5</span> Discussion and questions</h1>
+<h2 id="questions"><span class="header-section-number">5.1</span> Questions</h2>
+<ul>
+<li>If you have any more questions...</li>
+</ul>
+<h1 id="credits"><span class="header-section-number">6</span> Credits</h1>
+<h2 id="credits-1"><span class="header-section-number">6.1</span> Credits</h2>
+<p>This set of slides is based on these</p>
+<ul>
+<li>Arribas-Bel, D. 2014. &quot;<a href="http://darribas.org/quant_geog">A 1h. lecture on Quantitative Geography for second-year Geography students</a>&quot;</li>
+</ul>
+<h2 id="references"><span class="header-section-number">6.2</span> References</h2>
+<ul>
+<li>Fotheringham S., Brunsdon C., and Charlton M. 2000. Quantitative Geography: Perspectives on Spatial Data AnalysisQuantitative Geography: Perspectives on Spatial Data Analysis, Sage<br /></li>
+<li>Haggett, P. 2008. &quot;<a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1538-4632.2008.00731.x/abstract">The Local Shape of Revolution: Reflections on Quantitative Geography at Cambridge in the 1950s and 1960s</a>,&quot; <em>Geographical Analysis</em>, 40, 336–352.</li>
+<li>Murray, A. T. 2010. &quot;<a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1467-9787.2009.00642.x/abstract">Quantitative Geography</a>,&quot; <em>Journal of Regional Science</em>, 50, 1, 143-163.</li>
+<li>Pidwirny, M. 2006. &quot;<a href="http://www.physicalgeography.net/fundamentals/1e.html">History of Physical Geography</a>&quot; Fundamentals of Physical Geography, 2nd Edition. Date Viewed.</li>
+</ul>
+<h2 id="license"><span class="header-section-number">6.3</span> License</h2>
+<p>Content mainly done by <a href="http://darribas.org">Dani Arribas-Bel</a>, Update by <a href="http://www.stich.xyz">Christoph Stich</a>, licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+<p>Materials available at <a href="https://github.com/cstich/quant_geog">https://github.com/cstich/quant_geog</a></p>
+</body>
+</html>

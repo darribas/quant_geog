@@ -241,7 +241,11 @@ We also see further interesting patterns in central London too, where certain re
 ![http://en.wikipedia.org/wiki/Spatial_analysis#mediaviewer/File:Snow-cholera-map.jpg](fig/snow.jpg)
 </CENTER>
 
-\note{What did John Snow do in 1854 according to Wikipedia: By talking to local residents (with the help of Reverend Henry Whitehead), he identified the source of the outbreak as the public water pump on Broad Street (now Broadwick Street). Although Snow's chemical and microscope examination of a water sample from the Broad Street pump did not conclusively prove its danger, his studies of the pattern of the disease were convincing enough to persuade the local council to disable the well pump by removing its handle. This action has been commonly credited as ending the outbreak, but Snow observed that the epidemic may have already been in rapid decline:
+. . . 
+
+*Can you guess which pump was spreading the cholera bacteria?*
+
+\note{What did John Snow do in 1854 according to Wikipedia: By talking to local residents (with the help of Reverend Henry Whitehead), he identified the source of the outbreak as the public water pump on Broad Street (now Broadwick Street). Although Snow's chemical and microscope examination of a water sample from the Broad Street pump did not conclusively prove its danger, his studies of the pattern of the disease were convincing enough to persuade the local council to disable the well pump by removing its handle. This action has been commonly credited as ending the outbreak, but Snow observed that the epidemic may have already been in rapid decline}
 
 ## Regional analysis*
 
@@ -272,7 +276,6 @@ but also extended in various ways --- Regioonal comparison}
 * Traditionally *"the playground of non-geographers"* 
 * Recently, a much more reciprocal relationship
 * Using computation to create **spatial** knowledge
-    * Modelling human mobility, 
 * Increasing in relevance as datasets grow and your "average" problem becomes more computationally intensive
 
 # Where to continue
